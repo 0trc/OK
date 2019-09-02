@@ -96,6 +96,12 @@ struct weapon_setting
 		bool legs = true;
 	} hitboxes;
 
+	struct
+	{
+		bool enabled = false;
+		int min_damage = 1;
+	} autowall;
+
 	bool dynamic_fov = false;
 	float fov = 0.f;
 	float smooth = 1;
@@ -254,19 +260,24 @@ namespace settings
 		extern bool dropped_weapons;
 		extern bool night_mode;
 		extern bool pitch;
+		extern bool hitmarker;
 		extern int hitsound;
 		extern bool skychanger;
 		extern int skychanger_mode;
 		extern bool newstyle;
 		extern bool rcs_cross;
+		extern bool bullet_tracer;
 		extern float radius;
 		extern int rcs_cross_mode;
+		extern bool spread_cross;
 		extern bool a;
 		extern bool b;
 		extern bool choke;
 		extern bool skeletons;
 
+		extern Color spread_cross_color;
 		extern Color recoilcolor;
+		extern Color clr_bullet_tracer;
 		extern Color floatc;
 		extern Color skeletoncolor;
 
@@ -307,11 +318,13 @@ namespace settings
 	namespace misc 
 	{
 		extern bool bhop;
-		extern bool spectators;
-		extern bool bhoptype;
+		extern bool auto_strafe;
 		extern bool no_flash;
+		extern bool no_smoke;
 		extern float viewmodel_fov;
 		extern bool moon_walk;
+		extern bool deathmatch;
+		extern bool knife_bot;
 		extern bool radar;
 		extern bool human_bhop;
 		extern int bhop_hit_chance;
@@ -320,7 +333,9 @@ namespace settings
 		extern int debug_fov;
 		extern bool triggerbot_in_zoom_only;
 		extern bool esp_random;
+		extern bool lknife;
 		extern bool noscope;
+		extern bool selfnade;
 		extern bool lefthandknife;
 		extern bool legitpeek;
 	}

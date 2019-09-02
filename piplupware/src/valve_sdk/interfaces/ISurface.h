@@ -132,6 +132,7 @@ public:
 	virtual void          GetTextSize(vgui::HFont font, const wchar_t *text, int &wide, int &tall) = 0;
 	virtual vgui::VPANEL  GetNotifyPanel() = 0;
 	virtual void          SetNotifyIcon(vgui::VPANEL context, unsigned long icon, vgui::VPANEL panelToReceiveMessages, const char *text) = 0;
+	virtual void          PlaySound_(const char *fileName) = 0;
 	virtual int           GetPopupCount() = 0;
 	virtual vgui::VPANEL  GetPopup(int index) = 0;
 	virtual bool          ShouldPaintChildPanel(vgui::VPANEL childPanel) = 0;

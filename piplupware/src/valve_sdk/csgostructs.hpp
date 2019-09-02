@@ -256,6 +256,7 @@ public:
 	bool IsGun();
 
 	float GetInaccuracy();
+	float GetSpread();
 	void UpdateAccuracyPenalty();
 	bool is_grenade();
 	bool check_detonate(const Vector& vecThrow, const trace_t& tr, int tick, float interval);

@@ -17,11 +17,18 @@ struct BulletTracerInfoStruct
 	Vector HitPos = Vector(0, 0, 0);
 };
 
+struct HitmarkerInfoStruct
+{
+	float HitTime = 0.f;
+	float Damage = 0.f;
+};
+
 class runtime_saver
 {
 public:
 	std::vector<ImpactInfoStruct> hitpositions;
 	std::vector<BulletTracerInfoStruct> BulletTracers;
+	HitmarkerInfoStruct HitmarkerInfo;
 
 	Vector LastShotEyePos = Vector(0, 0, 0);
 };

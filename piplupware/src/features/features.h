@@ -7,12 +7,12 @@
 namespace features
 {
 	void bhop(CUserCmd* cmd);
-	void EdgeJump(CUserCmd* cmd);
-	void spectators(CUserCmd* cmd);
 	void moon_walk(CUserCmd* cmd);
+	void auto_strafe(CUserCmd* cmd);
 	void thirdperson();
 	void human_bhop(CUserCmd* cmd);
 	void LegitPeek(CUserCmd* pCmd);
+	void SelfNade(CUserCmd *cmd);
 }
 
 namespace color_modulation
@@ -35,8 +35,10 @@ namespace visuals
 	void more_chams() noexcept;
 	void glow() noexcept;
 	void RenderPunchCross();
+	void RenderHitmarker();
 	void RenderNoScopeOverlay();
 	//void DrawGrenade(c_base_entity* ent);
+	void SpreadCircle();
 	void bomb_esp(c_planted_c4* entity) noexcept;
 	void DrawFov(); //todo
 	void Choke();
@@ -95,7 +97,10 @@ namespace lighting_shots
 	void handle(CUserCmd* cmd);
 }
 
-
+namespace zeusbot
+{
+	void handle(CUserCmd* cmd);
+}
 
 namespace grenade_prediction
 {
@@ -141,6 +146,13 @@ namespace desync
 	float get_max_desync_delta();
 }
 
+namespace fake_duck
+{
+	extern bool current_state;
+
+	void handle(CUserCmd* cmd, bool& send_packet);
+}
+
 namespace lobby_inviter
 {
 	extern 	uint32_t max_count;
@@ -149,7 +161,15 @@ namespace lobby_inviter
 	void inviteAll();
 }
 
+namespace slow_walk
+{
+	void handle(CUserCmd* cmd);
+}
 
+namespace knife_bot
+{
+	void handle(CUserCmd* cmd, bool& send_packet);
+}
 
 namespace resolver
 {
@@ -158,5 +178,11 @@ namespace resolver
 
 namespace no_flash
 {
+	void handle();
+}
+
+namespace no_smoke
+{
+	void event();
 	void handle();
 }

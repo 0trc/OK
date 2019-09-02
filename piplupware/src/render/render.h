@@ -68,14 +68,13 @@ namespace render
 		void toggle();
 		void background();
 		void show();
-
+		void test_tab();
 		void visuals_tab();
 		void aimbot_tab();
 		void misc_tab();
 		void skins_tab();
 		void players_tab();
 		void configs_tab();
-		void test_tab();
 		void glow_tab();
 	}
 
