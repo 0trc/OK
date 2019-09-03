@@ -134,6 +134,7 @@ namespace settings
 		extern bool enabled;
 		extern bool visible_only;
 		extern bool boxes;
+		extern bool testt;
 		extern int box_type;
 		extern bool names;
 		extern bool health;
@@ -178,6 +179,7 @@ namespace settings
 
 		extern float GlowEnemy[4];
 		extern float GlowTeam[4];
+		extern float test[4];
 
 		extern float GlowC4Planted[4];
 		extern float GlowDroppedWeapons[4];
@@ -268,6 +270,7 @@ namespace settings
 		extern bool rcs_cross;
 		extern bool bullet_tracer;
 		extern float radius;
+		extern float test;
 		extern int rcs_cross_mode;
 		extern bool spread_cross;
 		extern bool a;
@@ -282,6 +285,28 @@ namespace settings
 		extern Color skeletoncolor;
 
 		extern ImVec4 sky;
+
+		extern ImVec4 menucolor;
+		extern ImVec4 textcolor;
+
+		extern ImVec4 checkmarkcolor;
+		extern ImVec4 checkmarkactivecolor;
+		extern ImVec4 checkmarkhovercolor;
+
+		extern ImVec4 headercolor;
+		extern ImVec4 sliderbgcolor;
+		extern ImVec4 framebgcolor;
+		extern ImVec4 listboxitemcolor;
+		extern ImVec4 buttonoutlinecolor;
+		extern ImVec4 buttontextcolor;
+		extern ImVec4 buttonselectedcolor;
+		extern ImVec4 buttonhovercolor;
+		extern ImVec4 sliderhovercolor;
+		extern ImVec4 slideractivecolor;
+
+
+
+
 	}
 
 	namespace desync

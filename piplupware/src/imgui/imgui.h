@@ -813,6 +813,7 @@ enum ImGuiBackendFlags_
 // Enumeration for PushStyleColor() / PopStyleColor()
 enum ImGuiCol_
 {
+
 	ImGuiCol_Text,
 	ImGuiCol_TextDisabled,
 	ImGuiCol_WindowBg,              // Background of normal windows

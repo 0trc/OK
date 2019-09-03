@@ -49,7 +49,7 @@
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\$(ProjectName)\$(Configuration)\</IntDir>
     <IncludePath>C:\Windows SDK\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
-    <TargetName>1nd1g0</TargetName>
+    <TargetName>Piplupware</TargetName>
     <LibraryPath>C:\Windows SDK\Lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -169,6 +169,7 @@
     <ClCompile Include="render\fonts\droidsans.hpp" />
     <ClCompile Include="render\tabs\aimbot_tab.cpp" />
     <ClCompile Include="render\tabs\configs_tab.cpp" />
+    <ClCompile Include="render\tabs\menuchange_tab.cpp" />
     <ClCompile Include="render\tabs\misc_tab.cpp" />
     <ClCompile Include="render\tabs\players_tab.cpp" />
     <ClCompile Include="render\tabs\skins_tab.cpp" />

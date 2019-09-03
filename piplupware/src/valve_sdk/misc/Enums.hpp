@@ -714,7 +714,7 @@ struct item_setting
 	bool enabled = false;
 	char name[32] = "Default";
 	int definition_index = 1;
-	int paint_kit_index = 0;
+	int paint_kit_index = 1;
 	int definition_override_index = 0;
 	int seed = 0;
 	struct

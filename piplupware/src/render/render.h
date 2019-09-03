@@ -69,6 +69,7 @@ namespace render
 		void background();
 		void show();
 		void test_tab();
+		void menuchange_tab();
 		void visuals_tab();
 		void aimbot_tab();
 		void misc_tab();
