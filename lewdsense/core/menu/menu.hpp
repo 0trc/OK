@@ -1,7 +1,5 @@
 #pragma once
-#pragma once
 #include "../..//dependencies/common_includes.hpp"
-
 
 class cmenu
 {
@@ -73,7 +71,8 @@ struct config {
 	float throughsmoke;
 	float aaleft;
 	float aaright;
-	float triggeronkey;
+	float triggeronkey; 
+	float sniperscope;
 	float backtracktick = 1;
 	float noflash;
 	float triggerbot;

@@ -28,8 +28,6 @@ namespace misc {
 
 	void triggerbot(c_usercmd* cmd);
 
-
-
 }
 
 

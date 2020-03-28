@@ -119,7 +119,6 @@ void cmenu::renderbackground()
 {
 
 
-
 	render::draw_filled_rect(x + menu_pos, y, w, h, color(75, 75, 75, menubackground_alpha));
 
 	if (cfg.menuopened)

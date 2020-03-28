@@ -3,8 +3,7 @@
 #include "../features/features.hpp"
 #include "../features/misc/engine_prediction.hpp"
 #include "../menu/menu.hpp"
-#include "../features/misc/backtrack.h"
-#include "../features/misc/skinchanger.hpp"
+#include "../features/misc/backtrack.h"	void playerscope(c_usercmd* cmd);
 
 /*how to get entity:
 

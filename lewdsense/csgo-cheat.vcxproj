@@ -92,6 +92,7 @@
     <ClCompile Include="core\features\misc\misc.cpp" />
     <ClCompile Include="core\features\misc\havedumper.hpp" />
     <ClCompile Include="core\features\misc\skinchanger.cpp" />
+    <ClCompile Include="core\features\misc\sniperscope.cpp" />
     <ClCompile Include="core\features\misc\Triggerbot.cpp" />
     <ClCompile Include="core\features\visuals\visuals.cpp" />
     <ClCompile Include="core\hooks\hooks.cpp" />

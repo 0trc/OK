@@ -1,5 +1,5 @@
 ﻿#include "../features.hpp"
-#include "../..//menu/menu.hpp"
+
 
 
 
@@ -150,7 +150,7 @@ void misc::noflash(c_usercmd* cmd)
 
 
 
-vec3_t angle_vectorrr(vec3_t meme)
+vec3_t angle_vectorrrrr(vec3_t meme)
 {
 	auto sy = sin(meme.y / 180.f * static_cast<float>(M_PI));
 	auto cy = cos(meme.y / 180.f * static_cast<float>(M_PI));

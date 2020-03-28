@@ -79,6 +79,10 @@ void misc::triggerbot(c_usercmd* cmd)  {
 
 		float bruh = 7;
 
+		if (!pEnemny)
+			continue;
+
+
 		if (enemycheck(pEnemny, cmd))
 		{
 			cmd->buttons |= in_attack;
@@ -88,3 +92,4 @@ void misc::triggerbot(c_usercmd* cmd)  {
 	}
 
 };
+
